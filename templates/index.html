@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+   {% include "header.html" %}
+            <!-- Header-->
+            <header class="py-5" >
+                <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("../static/assets/bg.jpeg");
+            background-size: cover; /* This ensures the image covers the entire background */
+            background-position: center;
+            background-repeat: no-repeat;
+            /* Add any additional styling you need */
+        }
+
+        /* Add your other CSS styles here */
+</style>
+                <div class="container px-5 pb-5">
+                    <div class="row gx-5 align-items-center">
+                        <div class="col-xxl-5">
+                            <!-- Header text content-->
+                            <div class="text-center text-xxl-start">
+                                <div class="badge bg-gradient-primary-to-secondary text-white mb-4"><div class="text-uppercase">Windows &middot; AWS &middot; Python &middot; Cloud</div></div>
+                                <div class="fs-3 fw-light text-muted">Hello there!</div>
+                                <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline">Cloud Enthusiast | Server Admin</span></h1>
+                                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
+                                    <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="{{ url_for('resume') }}">Resume</a>
+                                    <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="{{ url_for('projects') }}">Projects</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-7">
+                            <!-- Header profile picture-->
+
+                                    <!-- TIP: For best results, use a photo with a transparent background like the demo example below-->
+                                    <!-- Watch a tutorial on how to do this on YouTube (link)-->
+
+                                    <!-- END of SVG dots-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- About Section-->
+            <section class="bg-light py-5">
+                <div class="container px-5">
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-xxl-8">
+                            <div class="text-center my-5">
+                                <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">About Me</span></h2>
+                                <p class="lead fw-light mb-4">My name is Onkar.</p>
+                                <p class="text-muted">Hello! I'm Onkar, a Windows Server Administrator with over 4 years of professional experience. My journey in the IT realm has led me through Technical Support, Hyper-V Management, and Windows Server expertise. I've honed my skills in managing Windows Active Directory, ensuring secure resource access, and fostering client satisfaction.</p>
+								<p class="text-muted">I hold two AWS certifications—AWS Solutions Architect Associate and AWS Developer Associate—demonstrating my strong grasp of cloud technology. My proficiency extends to Python programming, allowing me to automate tasks efficiently. I excel in troubleshooting, harnessing analytical thinking to resolve complex issues.</p>
+								<p class="text-muted">My recent projects showcase my hands-on abilities: deploying HTML resumes using AWS S3 and enhancing user experience with AWS services. I've developed an asset tracker application both Desktop version and Web application version  for keeping track of remote employee assets, leveraging Python, Tkinter, Flask and MySQL to streamline asset management. Lastly a simple weather application to get current weather condition of any city.</p>
+                                <div class="d-flex justify-content-center fs-2 gap-4">
+                                    <a class="text-gradient" href="#!"><i class="bi bi-twitter"></i></a>
+                                    <a class="text-gradient" href="https://linkedin.com/in/onkar-mane-7777b2249/"><i class="bi bi-linkedin"></i></a>
+                                    <a class="text-gradient" href="#!"><i class="bi bi-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer-->
+{% include "footer.html" %}
+    </body>
+</html>
