@@ -5,6 +5,7 @@ from Posts import Projects
 
 
 app = Flask(__name__)
+#bootstrap = Bootstrap5(app)
 
 all_projects = Projects
 
